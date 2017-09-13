@@ -1,0 +1,33 @@
+heapsort
+
+makeheap(a)
+	for i<-a.length-1 ... 0
+	    heapify(a, i)
+	end
+end
+
+hasRight(a,i)
+   return  2*i+2 < a.length
+end
+     
+heapify(a, i)
+	if i >= n/2
+	   return
+	end
+
+	if hasRight(a,i)
+	   if a[2i+1] > a[2i+2]
+	      if a[2i+1] > a[i]
+	      	 swap(a[2i+1], a[i]
+		 heapify(a, 2i+1)
+	      end
+	   else
+	      if a[2i+2] > a[i]
+	      	 swap(a[2i+2], a[i]
+		 heapify(a, 2i+2)
+	      end
+           end	   
+end
+
+
+
