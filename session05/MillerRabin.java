@@ -1,7 +1,9 @@
-public class MillerRabin {
+import java.util.*;
+
+public class MillerRabin { 
+    private static Random rnd = new Random(0); // always seed with a known value for testing
     private static BigInteger TWO = new BigInteger(2);
     public static boolean millerRabin(BigInteger p, int k) {
-	Random rnd = new Random(0); // always seed with a known value for testing
 	
 	BigInteger pminus1 = p.subtract(BigInteger.ONE);
 	// find out how many trailing zeros there are in p-1
@@ -21,7 +23,7 @@ public class MillerRabin {
 	    if (x.compareTo(BigInteger.ONE) == 0 || x.compareTo(pminus1) == 0)
 		continue;
 	    for (--r ; r > 0; --r) {
-		x = x.modPow(TWO,p);
+		x = x.modPow(TWO,p); // x^TWO mod p
 		if (x.compareTo(BigInteger.ONE) == 0)
 		    return false;
 		if (x.compareTo(pminus1) == 0)
@@ -30,5 +32,13 @@ public class MillerRabin {
             return false;	    
 	}
         return true;
+ 
+    }
+    public static  void main(String[] args) {
+	BufferedReader br = new BufferedReader(System.in);
+	String digits = br.readLine();
+	BigInteger p = new BigInteger(digits);
+	System.out.println(millerRabin(p, 6));
 
     }
+}
