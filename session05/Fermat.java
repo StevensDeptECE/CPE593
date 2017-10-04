@@ -19,10 +19,10 @@ public class Fermat {
 		BigInteger p1 = new BigInteger("17");
 		System.out.println(fermatTest(p1, 2));
 
-		BigInteger p1 = new BigInteger("42");
+		p1 = new BigInteger("42");
 		System.out.println(fermatTest(p1, 2));
 
-		BigInteger p1 = new BigInteger("60977817398996785");
+		p1 = new BigInteger("60977817398996785");
 		System.out.println(fermatTest(p1, 2));
 	}
 

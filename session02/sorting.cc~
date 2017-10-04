@@ -1,0 +1,34 @@
+#include <iostream>
+#include <random>
+using namespace std;
+
+mt19937 rnd(0); // always test with random number generator seeded to a specific value
+// random numbers will always be the same in every run, which is boring!
+// when code works, remove the zero and it will seed with the time
+
+// generate n random integerws from 0 to maxInt
+int* generateRandom(int n, int maxInt) {
+  int* p = new int[n];
+  uniform_distribution<> r(0, maxInt);
+  for (int i = 0; i < n; i++)
+    p[i]  = r(rnd);
+  return p;
+}
+
+bool increasing(int x[], int n) {
+  for (int i = 0; i < n-1; i++)
+    if (x[i] > x[i+1])
+      return false;
+  return true;
+}
+
+void test(int trials, int n) {
+  for (int t = 0; t < trials; t++) {
+    int* p = generateRandom(n, n);
+    sort(p, n);
+    increasing(p, n);
+    delete[] p;
+  }
+}
+
+int main() {
