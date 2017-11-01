@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class LinkedList {
+	class Node {
+		int  v;
+		Node* next;
+ 		Node(int v, Node* next) {
+			this->v = v;
+			this->next = next;
+		}
+	};
+
+	Node* head;
+	Node* tail;
+public:
+	LinkedList() { //O(1)
+		head = tail = nullptr;
+	}
+	~LinkedList()  { //O(n )
+		Node* temp;
+		for (Node* p = head; p->next != null; p=temp) {
+			temp = p->next;
+      delete p;
+		}
+	}
+	void addFirst(int v) {
+		if (head == null) {
+			head = tail = new Node(v, nullptr);
+		}
+
+
+
+	

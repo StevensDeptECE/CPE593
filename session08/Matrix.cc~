@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  Matrix a(3,4,0.0);  // O(mn) = O(3*4)
+  Matrix b(4,2,1.0); //O(n*p) = O(4*2);
+  Matrix c = a * b;  //O(mnp)
+
+  Matrix A = Matrix::read();
+  vector<double> B = read();
+  vector<double> x;
+  A.solve(x, B);
+  cout << x;
+  
+
+  // automatically call destructor
+  //~Matrix(); //O(1)
+}

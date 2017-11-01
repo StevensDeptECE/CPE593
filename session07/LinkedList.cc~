@@ -1,0 +1,27 @@
+class LinkedList {
+private:
+
+
+public:
+  LinkedList() {}
+  ~LinkedList() {}
+  LinkedList(const LinkedList& orig) {}
+  LinkedList& operator =(constLinkedList& orig) {}
+  void addFirst(int v) {}
+  void addLast(int v) {}
+  void removeFirst() {}
+  void removeLast() {}
+};
+
+int main() {
+  LinkedList a;
+  a.addFirst(3);
+  a.addLast(4);
+  a.insert(0, 1); // 3 1 4
+  for (LinkedList::Iterator i = a; ++i)
+    cout << *i << " ";
+  cout << '\n';
+
+  
+  
+}
