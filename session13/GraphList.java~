@@ -1,0 +1,35 @@
+public class GraphList {
+	private static class Edge {
+    int v2;
+		double w;
+		public Edge(int v2, double w) { this.v2 = v2; this.w = w; }
+	}
+
+	private ArrayList< LinkedList<Edge> > edges;
+
+	public GraphList(int V) {
+		edges = new ArrayList<>(V);
+		for (int i = 0; i < V; i++)
+			edges.set(i, new LinkedList<Edge>());
+	}
+	public void set(int i, int j, double w) {
+		LinkedList<Edge> edgei = edges.get(i);
+		for (LinkedList<Edge>.Iterator it = edgei.iterator(); it.hasNext(); ) {
+			Edge e = it.next();
+			if (e.v2 == j) {
+				e.w = w;
+				return;
+			}
+		}
+		edgei.add(new Edge(j, w));
+	}
+	public double get(int i, int j) {
+		for (LinkedList<Edge>.Iterator it = edges.get(i).iterator(); it.hasNext(); ) {
+      Edge e = it.next();
+			if (e.to == j)
+				return e.w;
+		}
+		return Double.POSITIVE_INFINITY;
+	}
+
+}
