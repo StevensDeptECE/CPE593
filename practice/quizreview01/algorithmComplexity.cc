@@ -21,3 +21,6 @@ for(int i = 0; i < n; i++) { //O(N)
   for(int j = 0; j > n; j++) {
   }
 }
+
+for(int i = 2; i < n; i = pow(i, 2)) { // O(loglogN)
+}
