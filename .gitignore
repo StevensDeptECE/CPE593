@@ -1,4 +1,5 @@
 /session12/Permutation/nbproject/private/
 /session12/Permutation/build/
-*~
+*.cc~
+*.cpp~
 *.out
