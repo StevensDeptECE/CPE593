@@ -14,7 +14,7 @@ int boyerMoore(const string& s, const string& t) {
   while(i < m) {
     int j = n - 1;
     for(; j >= 0; j--) {
-      if(j == 0 && s[i - j] == t[j]) return i - n + 1;
+      if(j == 0 && s[i - j] == t[j]) return i;
       if(s[i - j] == t[j]) continue;
     }
     i += map[s[i - j]];
