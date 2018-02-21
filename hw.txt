@@ -1,0 +1,43 @@
+==============================================
+HW4a - old
+Write a program that reads the following filename (it must have exactly this name) and outputs the desired output;
+
+The file is "HW4a.txt"
+
+ 
+
+The input will be a list of the following instructions : ADD_FRONT, ADD_BACK, REMOVE_FRONT, REMOVE_BACK, OUTPUT.
+
+Start with an empty GrowArray (not the kind we did in class, the one for homework is supposed to have a variable used and double each time it grows).  Here are the details of each instruction.
+
+ADD_FRONT start:step:end  // means add start, start+step, start+2*step, ... end at the front of the array
+
+ADD_BACKstart:step:end  // means add start, start+step, start+2*step, ... end at the end of the array
+
+REMOVE_FRONT N  // means remove the first N numbers from the list
+
+REMOVE_BACK M // means remove the last M numbers from the list
+
+OUTPUT  // output the numbers in the array
+
+ 
+
+For example
+
+ADD_FRONT 1:2:10
+
+ADD_BACK  5:5:25
+
+OUTPUT
+
+REMOVE_FRONT 2
+
+REMOVE_BACK 2
+
+OUTPUT
+
+would output:
+
+9,7,5,3,1,5,10,15,20,25
+
+5,3,1,5,10,15
