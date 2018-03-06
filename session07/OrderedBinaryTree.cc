@@ -73,6 +73,18 @@ public:
 
 };
 
+/**
+              3
+             / \
+            1   4
+             \   \
+              1   5
+               \   \
+                2   9
+
+
+ */
+
 int main() {
 	OrderedBinaryTree<int> t;
 	t.add(3);
