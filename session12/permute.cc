@@ -7,6 +7,10 @@ int main() {
   int x[] = {1, 2, 3, 4};
   char s[] = "abcd";
   vector<int> a = {1, 2, 3, 4};
+	vector<string> b;
+	b.push_back("abc");
+	b.push_back("def");
+	b.push_back("hello");
 
   while (next_permutation(x, x+4)) {
     for (auto e : x)

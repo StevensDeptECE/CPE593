@@ -12,10 +12,10 @@
 0	     10 or more
 
 histogram
-int[]x = {0, 1, 5, 2, 0, 0, 1, 1, 1, 6, 1, 32}
+int[] x = {0, 1, 5, 2, 0, 0, 1, 1, 1, 6, 1, 32}
 int[] count = new int[11];
 for (int v : x) {
-  if (x >= 10)
+  if (v >= 10)
      count[10]++;
   else
      count[v]++;

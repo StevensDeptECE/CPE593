@@ -18,8 +18,7 @@ public:
   }
   Matrix(const Matrix& orig) : rows(orig.rows), cols(orig.cols), m(new double[rows*cols]) {
     for (int i = 0; i < rows*cols; i++)
-      m[i] = orig.m[i]; //O(r*c)
-    
+      m[i] = orig.m[i]; //O(r*c)    
   }
   //copy and swap
   Matrix& operator =(const Matrix& orig) {
@@ -29,11 +28,11 @@ public:
     cols = copy.cols;//O(1)
     return *this;
   }
-  double operator[](int i) const {
-    return m[i];
+  double operator[](int i, int j) const {
+    return ;
   }
-  double& operator[](int i) {
-    return m[i];
+  double& operator[](int i, int j) {
+    return ;
   }
   // move constructor
   Matrix(Matrix&& orig) : rows(orig.rows),  cols(orig.cols) {
@@ -127,26 +126,3 @@ vector<double> read(int n, istream& s) {
   return B;
 }
 
-int main() {
-  Matrix a(3,4,0.0);  // O(mn) = O(3*4)
-  Matrix b(4,2,1.0); //O(n*p) = O(4*2);
-  Matrix c = b; // make a copy O(np)
-  Matrix d = a * b;  //O(mnp)
-  Matrix e = a + a;  //O(mn)
-  b(1,1) = 5.2; // calls operator()(int,int)
-  cout << b(1,2); // calls operator()(int,int)const
-  e = b;
-
-  ifstream f("hw5.dat");
-  Matrix A = Matrix::read(f);
-  vector<double> B = read(A.getRows(), f);
-  vector<double> x = solve(A, B);
-  for (auto v : x) {
-    cout << v << '\t';
-  }
-  cout << '\n';
-  
-
-  // automatically call destructor
-  //~Matrix(); //O(1)
-}

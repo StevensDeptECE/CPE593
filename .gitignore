@@ -5,3 +5,6 @@
 *.obj
 *.class
 *.out
+*.exe
+/session12/MagicSquareBruteForce2018S/nbproject/private/
+/session12/MagicSquareBruteForce2018S/build/

@@ -9,9 +9,20 @@ int main() {
   vector<int> a = {1, 2, 3, 4};
 
   while (next_permutation(x, x+4)) {
-    for (int i = 0; i < 4; i++)
-      cout << x[i] << ' ';
+    for (auto e : x)
+      cout << e;
     cout << '\n';
   }
-    
+
+  while (next_permutation(s, s+4)) {
+    for (auto e : s)
+      cout << e;
+    cout << '\n';
+  }
+  while (next_permutation(a.begin(), a.end())) {
+    for (auto e : a)
+      cout << e;
+    cout << '\n';
+  }
+}
   
