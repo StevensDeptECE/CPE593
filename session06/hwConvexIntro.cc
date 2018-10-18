@@ -8,8 +8,10 @@ int main() {
   ConvexHull ch(16); // create a 16x16 grid of GrowArray
   ch.read("convexhullpoints.dat");
   ch.printAllListSizes(); // tell us how many are in each list
-  ch.printMinMax(); // print minx, maxx, miny, maxy
-  ch.printPerimeterClockWiseOrder(); // p1,p2,p3,p4,p8,p12,p16..
+  ch.printMinMax(); // print minx, maxx, miny, maxy for the entire dataset
+  ch.printPerimeterClockWiseOrder(); // p1,p2,p3,p4, p8,p12,p16...
+	// for each growarray around the perimeter print xmin, xmax, ymin,ymax
+	// this is the minimum, maximum for the x,y in THAT BOX
   /*
 example shown n=4
      -----------------------
