@@ -56,16 +56,17 @@ public class IntArrayList {
 	}
 	
 	public static void main(String[] args) {
-		final int n = 100000000;
-		//		testIntArray(1000);
-		testArrayList(1000);
+		final int n = 10000000;
+		testIntArray(1000);
+		//testArrayList(1000);
 		
     long t0 = System.nanoTime();
-		//testIntArray(n);
-		testArrayList(1000);
+		testIntArray(n);
+		//testArrayList(n);
     long t1 = System.nanoTime();
 		System.out.println((t1-t0)*1e-9);
-
+		/*
+		
 		final int N2 = 10;
 		IntArray a = new IntArray(N2);
 		for (int i = 0; i < N2; i++)
@@ -74,6 +75,6 @@ public class IntArrayList {
 		int sum = 0;
 		for (Iterator i = a.begin(); i.hasNext(); i.next())
 			sum += i.value();
-
+		*/
 	}
 }

@@ -1,6 +1,0 @@
-class BadGrowArray {
-private:
-	int* data; // int[] data
-	uint_32t len;
-	uint_32t capacity;
-public:

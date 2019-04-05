@@ -1,4 +1,4 @@
-#include "Matrix.hh"
+#include "Matrix.cc"
 
 int main() {
   Matrix a(3,4,0.0);  // O(mn) = O(3*4)

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 using namespace std;
 
 class Matrix {
@@ -28,12 +29,14 @@ public:
     cols = copy.cols;//O(1)
     return *this;
   }
+#if 0
   double operator[](int i, int j) const {
     return ;
   }
   double& operator[](int i, int j) {
     return ;
   }
+#endif
   // move constructor
   Matrix(Matrix&& orig) : rows(orig.rows),  cols(orig.cols) {
     m = orig.m;
@@ -113,6 +116,7 @@ public:
     }
     backSubstitute(B);
   }
+	}
 };
 
 vector<double> read(int n, istream& s) {

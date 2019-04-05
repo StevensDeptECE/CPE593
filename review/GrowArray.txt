@@ -1,0 +1,52 @@
+class GrowArray {
+private:
+	int size;
+	int capacity;
+	int* data;
+	void grow() {
+	   int* old = data;
+	   capacity *= 2;
+	   data = new int[capacity];
+	   for (int i = 0; i < size; i++)
+	     data[i] = old[i];
+	   delete [] old;
+	}
+public:
+	GrowArray(int initialCapacity) { //O( 1 )
+	  capacity = initialCapacity;
+	  size = 0;
+	  data = new int[capacity];
+	}
+
+
+	void addLast(int v) {
+	  if (size >= capacity)
+	    grow();
+	  data[size++] = v;
+	}
+
+
+	int removeLast() {
+
+	}
+};
+
+
+int main() {
+    LinkedList2 list;
+    for (int i = 0; i < n; i++)
+    	list.addLast(i);
+
+    list[304] = 99;
+
+
+   // file contains n words
+   Trie trie;
+    while (!f.eof()) { //O( n  )
+      f >> word;
+      trie.add(word);//O(1)
+    }
+
+   for (Trie::iterator i = trie; i.hasNext(); ++i) {
+     cout << *i;
+}

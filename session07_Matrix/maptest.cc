@@ -11,5 +11,4 @@ int main() {
 
 	for (map<string, int>::iterator i = dict.begin(); i != dict.end(); ++i)
 		cout << i->first << "\t==>\t" << i->second << '\n';
-
 }

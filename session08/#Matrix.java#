@@ -1,7 +1,0 @@
-public class Matrix {
-	private double[] m;
-	private int rows, cols;
-	
-	public Matrix(int rows, int cols) {}
-	
-}
