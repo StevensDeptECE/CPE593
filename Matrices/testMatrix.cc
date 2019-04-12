@@ -19,6 +19,8 @@ int main() {
   vector<double> B = read(A.getRows(), f);
   vector<double> x = solve(A, B);
 
+#if 0
+	// not required for homework!
   Matrix L, U;
   A.LU(L, U); // LU = A
   // Ax1 = B1    Ax2 = B2    Ax3 = B3
@@ -42,4 +44,5 @@ int main() {
 
   // automatically call destructor
   //~Matrix(); //O(1)
+#endif
 }
