@@ -19,6 +19,8 @@ int main() {
   vector<double> B = read(A.getRows(), f);
   vector<double> x = solve(A, B);
 
+	// you must print out the vector x
+	
 #if 0
 	// not required for homework!
   Matrix L, U;
@@ -28,11 +30,7 @@ int main() {
 
 
 	// generalized least squares
-  A.leastSquares(B);
-
-
-	
-
+  A.leastSquares(B);	
 	
 	// QR Factorization
 	// PCA Principle Component Analysis
