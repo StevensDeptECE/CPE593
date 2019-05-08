@@ -20,6 +20,39 @@ public:
 	double operator ()(int r, int c) const {
 		return m[r*cols + c];
 	}
+	void subtractProj(int i, int j) {
+		double dot = 0;
+		for (int k = 0; k < rows; k++) {
+			dot += (*this)(k, i) * (*this)(k, j)
+		}
+		// <u,v>
+		for (int k = 0; k < rows; k++)
+			(*this)(k,j) -= dot * (*this)(k,j);
+	}
+	Matrix& gramschmidt() {
+		// ASSUME THAT rows = cols (square matrix)
+		int n = cols;
+		double mag = 0;
+		for (int i = 0; i < n; i++)
+			mag += (*this)(i,j) * (*this)(i,j);
+		mag = 1 / sqrt(mag);
+		for (int i = 0; i < n; i++)
+			(*this)(i,j) *= mag;
+		// now first column is a unit vector
+		for (int j = 1; j < n; j++) {
+			for (int i = 0; i < j; i++)
+				subtractProj(i,j);
+
+			double mag = 0;
+			for (int i = 0; i < n; i++)
+				mag += (*this)(i,j) * (*this)(i,j);
+			mag = 1 / sqrt(mag);
+			for (int i = 0; i < n; i++)
+				(*this)(i,j) *= mag;
+		}
+
+		return *this;
+	}
 	
 };
 

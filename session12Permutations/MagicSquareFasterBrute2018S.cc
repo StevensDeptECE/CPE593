@@ -31,6 +31,8 @@ example of bigger: n = 4, N = 16,  rowsum = 34
 				continue;
 			bits |= (1 << b);
 			int c = rowsum - a - b; //O(1)
+			if (bit & (1 << c))
+				continue; // this number already used
 			if (c == a || c == b) // if (bits & (1<<c))
 				continue;
 			for (int d = 1; d <= N; d++) {
