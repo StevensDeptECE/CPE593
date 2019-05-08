@@ -9,13 +9,16 @@ Matrices
 	representation (rectangular, diagonal, tridiagonal)
 	solving systems (Gauss-Jordan Elimination, partial pivoting)
 	addition
-	multiplication
+	multiplication      (nice to know that Strassen O(n^2.807)  Coppersmith Winograd is O(n^2.36)
 	Gram-Schmidt orthogonalization
 
 Strings
 	Boyer-Moore
 	Finite State
 	LCS
+
+	LCS(String a, String b, int i, int j)
+	LCS(char* a, char* b)
 
 Graphs
 	representation: list or matrix
@@ -28,3 +31,7 @@ Graphs
 	Kruskal
 
 	TSP*
+
+Backtracking
+	basic
+	Heap's
