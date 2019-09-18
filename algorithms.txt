@@ -1,0 +1,28 @@
+GCD	Greatest Common Divisor
+
+// 55 34 21 13 ...
+
+
+gcd(a,b)  //O(log n)
+	while b > 0			no loop -10
+	      temp = a mod b		no temp -5		b mod a -2
+	      a = b
+	      b = temp
+	end
+	return a			no answer? -2
+	end
+
+//3025 3024  --> 3024 1  1 0
+
+gcd(a,b)
+	if b == 0	   // no terminating condition? -10
+	   return a
+	end
+	return gcd(b, a mod b) // -2 b mod a
+end
+
+
+2,3,5 = 30
+2, 3, 5, 7 = 210
+2,3,5,7,11 = 2310
+
