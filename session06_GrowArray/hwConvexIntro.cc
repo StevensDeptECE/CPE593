@@ -5,7 +5,7 @@ public:
 };
 int main() {
   // for homework n=16
-  ConvexHull ch(16); // create a 16x16 grid of GrowArray
+  ConvexHull ch(8); // create a 16x16 grid of GrowArray
   ch.read("convexhullpoints.dat");
 
   // print the biggest and smallest x

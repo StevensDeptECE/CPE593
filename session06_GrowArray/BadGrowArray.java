@@ -44,11 +44,10 @@ public class BadGrowArray implements Cloneable  {
 	}
 	int remove(int pos);//O(len)
 
-	int find(int val) const;
-  int get(int pos) const {
+  int get(int pos) {
 		return data[pos];//O(1)
 	}
-	int size() const {
+	int size()  {
 		return len;
 	}
 };
@@ -57,11 +56,6 @@ void f(BadGrowArray b) {
 
 }
 
-BadGrowArray test() {
-	BadGrowArray a;
-	a.addEnd(5);
-	return a;
-}
 
 int main() {
 	BadGrowArray bga;

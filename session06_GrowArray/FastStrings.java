@@ -40,6 +40,8 @@ class B{
 
 class C {
 
+	public String toString() { return "C stuff"; }
+	
 	public void append(StringBuilder b) { b.append("c"); }
 
 }
@@ -49,6 +51,9 @@ class D {
 	private B b1;
 	private C c1;
 
+	public String toString() {
+		return return a1.toString() + b1.toString() + c1.toString();
+	}
 	public void append(StringBuilder b) {
 		a1.append(b);
 		b1.append(b);
@@ -63,6 +68,8 @@ class Test {
 		B b1 = new B();
 		C c1 = new C();
 		D d = new D();
+		System.out.println(a1);
+		System.out.println(b1);
 		a1.append(b);
 
 

@@ -18,8 +18,8 @@ public:
 	}
 	GrowArray(const GrowArray& orig) = delete;
 	GrowArray& operator =(const GrowArray& orig) = delete;
-  void addEnd(T v) {}
-  void addStart(T v) {}
+  void addEnd(T v) {} //O(  )
+  void addStart(T v) {} //O(   )
   void insert(int i, T v) {}
   void removeEnd() {}
   void removeStart() {}
