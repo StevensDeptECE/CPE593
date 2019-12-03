@@ -12,7 +12,7 @@ int main() {
 	b.push_back("def");
 	b.push_back("hello");
 
-  while (next_permutation(x, x+4)) {
+  while (std::next_permutation(x, x+4)) {
     for (auto e : x)
       cout << e;
     cout << '\n';
