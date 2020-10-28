@@ -1,0 +1,108 @@
+you will be given numbers a < b < 10^14
+b - a < 10^8
+
+Compute the number of primes between a and b inclusive that do not contain the digit 7
+
+Compute the number of primes between a and b inclusive that do not contain the digit 7 or 3
+
+for i = a to b
+  if (contains(7))
+    skipit;
+  if isPrime(i)
+    count++
+
+
+10000000007
+10000000009
+10000000011
+10000000013
+10000000015
+10000000017
+10000000019
+10000000021
+10007000001
+10008000000
+10070000000
+
+prime number wheel 2 * 3 * 5
+
+x = 2 * 3 + 4;
+
+while x < 4 {
+}
+
+if x > 2 {
+
+[a-z]
+[^a-z]
+(this|that)
+a*
+a+
+a?
+
+
+whileregex = /while\s+(.*)\{/
+
+
+ifregex = /if\s+(.*)\{/
+
+
+
+String s = getLine();
+if (whileregex.matches(s)) {
+
+} else if (ifregex.matches(s)) {
+
+}
+
+
+int whichPattern = match(...) {
+case WHILE: ...
+   condition = $1
+case IF: ...
+   condition = $1
+case ASSIGNMENT: ..
+
+
+while i < 10 {
+
+}
+
+whiff x
+
+
+
+abcasdfasbdasbdab
+
+
+bad
+
+
+typedef void (*DoSomething)();
+
+DoSomething[NUMSTATES] = {
+ nullptr, nullptr, nullptr, foundit,..., setREGEXRETURN, 
+ 
+uint8_t nextState[NUMSTATES][256] = {
+  [0,0,0,....  1, 0,0,0,00],
+  [0,0,0,0,0,2,10,0,0,0,00],
+  [0,0,0,0,0,0,1,0,3,0,0,0,]
+  [found it!!!]
+
+
+class StateMachine {
+private:
+  struct Next {
+    uint8_t next[256];
+    uint8_t action; // do something
+    uint32_t base;
+  };
+  Next states[NUMSTATES];
+  uint32_t current;
+
+
+  void nextState(char c) {
+    current = states[current].next[c];
+  }
+}
+
