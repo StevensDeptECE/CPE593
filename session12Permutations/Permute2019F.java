@@ -4,7 +4,7 @@ public class Permute2019F {
 		p = new int[n];
 		for (int i = 0; i < n; i++)
 			p[i] = i+1;
-    generate(n-1);
+        generate(n-1);
 	}
 	public void printit() {
     for (int i = 0; i < p.length; i++)
