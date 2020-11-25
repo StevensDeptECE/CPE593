@@ -12,7 +12,7 @@ void quicksort(int x[], int L, int R) {
       j--;
     swap(x[i], x[j]);
   }
-  // guarateed i == j
+  // guaranteed i == j
   quicksort(x, L, i);
   quicksort(x, i+1, R);
 }
