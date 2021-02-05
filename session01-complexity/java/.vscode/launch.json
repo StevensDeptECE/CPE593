@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": [1,2,3,"abc",92]
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CmdLine<java_ccb06616>",
+            "request": "launch",
+            "mainClass": "CmdLine",
+            "projectName": "java_ccb06616"
+        }
+    ]
+}
