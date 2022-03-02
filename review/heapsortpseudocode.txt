@@ -1,0 +1,43 @@
+heapsort(a)
+  n = length(a)
+  for i = n/2-1 to 0
+    makesubheap(a, i, n)
+  end
+
+  // sort the array
+
+  for i = n-1 to 1
+    swap(a[0], a[i])
+    makesubheap(a, 0, i-1)
+  end
+end
+
+makesubheap(a, i, n)
+  left = 2*i+1
+  right = 2*i+2
+  
+  if left >= n
+    return
+  if right >= n
+   if (a[left] > a[i])
+     swap(a[left], a[i])
+   end
+   return
+  end
+  if a[left] > a[right]
+    if a[left] > a[i]
+      swap(a[left], a[i])
+      makesubheap(a, left, n)
+    end
+    return
+  else
+    if a[right] > a[i]
+      swap(a[right], a[i])
+      makesubheap(a, right, n)
+    end
+    return      
+  end
+
+
+
+
