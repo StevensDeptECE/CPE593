@@ -1,4 +1,6 @@
 # Weekly Calendar
+## Dov Kruger's weekly schedule. There are preferred time blocks designated when you may request an appointment.
+
 |   | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
 |---| --- | --- | --- | --- | --- | --- | --- |
 | 9 |     |     |     |     |     |     |     |
@@ -16,9 +18,28 @@
 |21 |     |     |     |     |     |     |     |
 |---| --- | --- | --- | --- | --- | --- | --- |
 
-# Dov Kruger
- * Office hours: (zoom), Mon 10-11, 9pm-10pm Wed 10-11 Thu 10-11, 8pm-9pm
-     in person or other hours by appointment
+|---------------| ------------- | ------------- | ------------- | --------- |
+| Position      | Name          | Email contact | Help with     | hours     |
+|---------------| ------------- | ------------- | ------------- | --------- |
+| TA CPE390     | Fan Yang      | canvas        |               | Mon 2:30 - 4:30pm |
+|               |               |               |               | Wed 3:00 - 5:00pm |
+|---------------| ------------- | ------------- | ------------- | --------- |
+| TA CPE390     | Mingju He     | canvas        |               |           |
+|               |               |               |               |           |
+|---------------| ------------- | ------------- | ------------- | --------- |
+| TA CPE593     | Bingyang Wen  | canvas        |               |           |
+|               |               |               |               |           |
+|---------------| ------------- | ------------- | ------------- | --------- |
+| peer mentor   | Alice Huston  |               | C++,cmake     |           |
+|               |               |               | make          |           |
+|---------------| ------------- | ------------- | ------------- | --------- |
+| peer mentor   | Calvin Zheng  |               |               |           |
+|               |               |               |               |           |
+|---------------| ------------- | ------------- | ------------- | --------- |
+| B123 sysadmin | Richie Cahill |               |               |           |
+|               |               |               |               |           |
+|---------------| ------------- | ------------- | ------------- | --------- |
+
 
 * **Teaching Assistant:**       Bingyang Wang (bwang4 at stevens)
 * **Office Hours:**		
