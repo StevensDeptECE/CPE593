@@ -24,12 +24,10 @@
 |               |               |               |               |           |
 | TA CPE593     | Bingyang Wen  | canvas        |               |           |
 |               |               |               |               |           |
-| peer mentor   | Alice Huston  |               | C++,cmake     |           |
-|               |               |               | make          |           |
+| peer mentor   | Alice Huston  |               | C++,cmake,make |           |
 | peer mentor   | Calvin Zheng  |               |               |           |
-|               |               |               |               |           |
 | B123 sysadmin | Richie Cahill |               |               |           |
-|               |               |               |               |           |
+
 
 
 * **Teaching Assistant:**       Bingyang Wang (bwang4 at stevens)
