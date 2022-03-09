@@ -4,11 +4,13 @@
 |   | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
 |---| --- | --- | --- | --- | --- | --- | --- |
 | 9 |     |     |     |     |     |     |     |
-|10 |     |     | [DovKruger office hours](https://stevens.zoom.us/j/98309917165)     |      | [DovKruger office hours](https://stevens.zoom.us/j/98309917165)    |     |     |
+|10 |     |     | [DovKruger office hours 10-11](https://stevens.zoom.us/j/98309917165)     |      | [DovKruger office hours  10-11](https://stevens.zoom.us/j/98309917165)    |     |     |
 |11 |     |     |     |     |     |     |     |
-|12 |     |12:30-13:45 CPE-390A    |     | 12:30-13:45 CPE-390A    |     |     |     |
+|12 |     | 12:30-13:45 |     | 12:30-13:45   |     |     |     |
+|   |     | CPE-390A    |     | CPE-390A      |     |     |     |
 |13 |     |     |     |     |     |     |     |
-|14 |     |14:00-15:15 CPE-390B     |     | 14:00-15:15 CPE-390B   |     |     |     |
+|14 |     | 14:00-15:15     |     | 14:00-15:15     |     |     |     |
+|   |     | CPE-390B        |     | CPE-390B        |     |     |     |
 |15 |     |     |     |     |     |     |     |
 |16 |     |     |     |Grail Crypto senior design   |     |     |     |
 |17 |     |     |     |StevensCAD senior design     |     |     |     |
