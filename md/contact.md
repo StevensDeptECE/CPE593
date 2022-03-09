@@ -17,18 +17,12 @@
 |20 |     |     |     |     |     |     |     |
 |21 |     |     |     |     |     |     |     |
 
-| Position      | Name          | Email contact | Help with     | hours     |
-|---------------| ------------- | ------------- | ------------- | --------- |
-| TA CPE390     | Fan Yang      | canvas        |               | Mon 2:30 - 4:30pm <br/> Wed 3:00 - 5:00pm |
-| TA CPE390     | Mingju He     | canvas        |               |           |
-| TA CPE593     | Bingyang Wen  | canvas        |               |           |
-| peer mentor   | Alice Huston  |               | C++, cmake, make |           |
-| peer mentor   | Calvin Zheng  |               |               |           |
-| B123 sysadmin | Richie Cahill |               |               |           |
-
-
-
-* **Teaching Assistant:**       Bingyang Wang (bwang4 at stevens)
-* **Office Hours:**		
-son by appt
-  * Fan Yang:   Burchard Building 315, Mondays at 2.30pm-4.30pm and Wednesdays at 3.00pm-5.00pm
+| Position      | Name          | Email contact      | Help with     | Room   | hours     | zoom |
+|---------------| ------------- | ------------------ | ------------- | ------ | --------- | ---- |
+| TA CPE390     | Fan Yang      | canvas             |               | B315   |\
+Mon 2:30 - 4:30pm <br/> Wed 3:00 - 5:00pm |      |
+| TA CPE390     | Mingju He     | canvas             |               |           |      |
+| TA CPE593     | Bingyang Wen  | canvas             |               |        |\          |      |
+| peer mentor   | Alice Huston  |                    | C++, cmake, make |           |      |
+| peer mentor   | Calvin Zheng  | czheng4 at stevens |               |           |      |
+| B123 sysadmin | Richie Cahill |                    |               |           |      |
