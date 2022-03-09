@@ -1,15 +1,15 @@
 # Weekly Calendar
 |   | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
 |---| --- | --- | --- | --- | --- | --- | --- |
-| 9 |     | [Dov Kruger Office Hours](    |     |     |     |     |     |
-|10 |     |     |     |     |     |     |     |
+| 9 |     |     |     |     |     |     |     |
+|10 |     |     |     |[DovKruger office hours](https://stevens.zoom.us/j/98309917165)      | [DovKruger office hours](https://stevens.zoom.us/j/98309917165    |     |     |
 |11 |     |     |     |     |     |     |     |
-|12 |     |     |     |     |     |     |     |
+|12 |     |12:30-13:45 CPE-390A    |     | 12:30-13:45 CPE-390A    |     |     |     |
 |13 |     |     |     |     |     |     |     |
-|14 |     |     |     |     |     |     |     |
+|14 |     |14:00-15:15 CPE-390B     |     | 14:00-15:15 CPE-390B   |     |     |     |
 |15 |     |     |     |     |     |     |     |
-|16 |     |     |     |     |     |     |     |
-|17 |     |     |     |     |     |     |     |
+|16 |     |     |     |Grail Crypto senior design   |     |     |     |
+|17 |     |     |     |StevensCAD senior design     |     |     |     |
 |18 |     |     |     |     |     |     |     |
 |19 |     |     |     |     |     |     |     |
 |20 |     |     |     |     |     |     |     |
