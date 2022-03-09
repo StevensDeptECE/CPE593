@@ -4,7 +4,7 @@
 |   | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
 |---| --- | --- | --- | --- | --- | --- | --- |
 | 9 |     |     |     |     |     |     |     |
-|10 |     |     |     |[DovKruger office hours](https://stevens.zoom.us/j/98309917165)      | [DovKruger office hours](https://stevens.zoom.us/j/98309917165    |     |     |
+|10 |     |     | [DovKruger office hours](https://stevens.zoom.us/j/98309917165)     |      | [DovKruger office hours](https://stevens.zoom.us/j/98309917165)    |     |     |
 |11 |     |     |     |     |     |     |     |
 |12 |     |12:30-13:45 CPE-390A    |     | 12:30-13:45 CPE-390A    |     |     |     |
 |13 |     |     |     |     |     |     |     |
