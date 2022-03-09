@@ -19,8 +19,7 @@
 
 | Position      | Name          | Email contact | Help with     | hours     |
 |---------------| ------------- | ------------- | ------------- | --------- |
-| TA CPE390     | Fan Yang      | canvas        |               | Mon 2:30 - 4:30pm |
-|               |               |               |               | Wed 3:00 - 5:00pm |
+| TA CPE390     | Fan Yang      | canvas        |               | Mon 2:30 - 4:30pm <br/> Wed 3:00 - 5:00pm |
 | TA CPE390     | Mingju He     | canvas        |               |           |
 |               |               |               |               |           |
 | TA CPE593     | Bingyang Wen  | canvas        |               |           |
