@@ -1,0 +1,29 @@
+9  1  3  6  5  2  5  10
+pivot = [x[0] + x[7]) / 2 = 9
+i                 j
+5  1  3  6  5  2  9  10
+                  ij
+
+quicksort(x, left, right)
+if (right - left < 2 )
+  return
+i = left
+j = right
+pivot = (x[left] + x[right]) / 2
+while (i < j ) {
+      while (x[i] < pivot && i < j)
+      	    i++;
+      while (x[j] >= pivot && i < j)
+	    j--;
+      if (i < j)
+         swap(x[i], y[j]);
+}
+quicksort(x, left,  i-1)
+quicksort(x, i, right )
+
+
+same thing as pseudocode...
+while i < j
+  while x[i] < pivot
+     i <-- i+1
+  end

@@ -1,0 +1,99 @@
+alignas
+alignof
+and
+and_eq
+asm
+atomic_cancel
+atomic_commit
+atomic_noexcept
+auto
+bitand
+bitor
+bool
+break
+case
+catch
+char
+char16_t
+char32_t
+class
+compl
+concept
+const
+constexpr (since C++11)
+const_cast
+continue
+co_await (coroutines TS)
+co_return (coroutines TS)
+co_yield (coroutines TS)
+decltype (since C++11)
+default(1)
+delete(1)
+	
+
+do
+double
+dynamic_cast
+else
+enum
+explicit
+export(1)
+extern(1)
+false
+float
+for
+friend
+goto
+if
+import (modules TS)
+inline(1)
+int
+long
+module (modules TS)
+mutable(1)
+namespace
+new
+noexcept (since C++11)
+not
+not_eq
+nullptr (since C++11)
+operator
+or
+or_eq
+private
+protected
+public
+	
+
+register(2)
+reinterpret_cast
+requires (since C++20)
+return
+short
+signed
+sizeof(1)
+static
+static_assert (since C++11)
+static_cast
+struct(1)
+switch
+synchronized (TM TS)
+template
+this
+thread_local (since C++11)
+throw
+true
+try
+typedef
+typeid
+typename
+union
+unsigned
+using(1)
+virtual
+void
+volatile
+wchar_t
+while
+xor
+xor_eq 

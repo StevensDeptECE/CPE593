@@ -1,0 +1,23 @@
+class PerfectHash {
+private:
+	constexpr int EMPTY = 0;
+	class HashTable {
+	public:
+		int size;
+		int* vals;
+		HashTable(int s) : size(s), vals(new int[s]) {
+			for (int i = 0; i < s; i++)
+				vals[i] = EMPTY;
+		}
+		HashTable() : HashTable(0) {}
+	};
+	uint32_t size;
+	HashTable* table;
+public:
+	PerfectHash(uint32_t size) : size(size), table(new HashTable[size]) {}
+	void add(uint32_t val) {
+		int pos = hash(val);
+		table[pos].add(val);
+	}
+	
+};

@@ -1,0 +1,99 @@
+phi = 1.618
+
+S = 18
+
+1  2  5  8 11 39 41 42 95 2 -5 -25 -26 -27 -27 -28 -30 -31
+L                X                  Y                    R
+L        X              Y           R
+         L                          R
+
+
+1  2  5  8 11 39 41 42 95 2 -5 -25 -26 -27 -27 -28 -30 -31
+L                 X             Y                        R
+L             X   Y             R
+              L   X       Y     R
+              LX  Y       R
+                                
+S = (R-L+1) / phi = (R-L+1) * 0.618.. = 10.8 round off to 11
+X = R - S = 17 - 11 = 6
+Y = L + S
+
+if X is bigger, then Y is the new right. If Y is bigger, X is the new L
+S = R-L+1 = 12 / phi = 7.4 round off to 7
+X = R - S = 5
+
+S = R-L+1 = 7 / phi = 4.32 round off to 4
+Y = L + S = 5 + 4 = 9
+
+S = R-L+1 = 9 - 5 + 1 = 5
+X = R - S
+
+
+
+
+f(x) = 3 - x^2
+L = -1
+R = 4
+
+S = (R - L) / phi = 4 - -1 = 5/1.618 = 3.09023
+X = R - S = 4 - 3.09 = 0.81
+Y = L + S = -1 + 3.09 = 2.09
+if (f(X) > f(Y)
+   2.3439  1.3681
+
+
+
+f(X) = x^2 - 3     , roots @ x = -sqrt(3), +sqrt(3)
+
+bisection(f, 0.0,   5.0)
+f(0.0) = -3
+f(5.0) = 22
+guess = (L + R) / 2 = 2.5
+f(guess) is positive, so
+f(2.5) = 6.25 - 3 = 3.25
+R = 2.5
+guess = (L + R) / 2 = (0 + 2.5) / 2 = 1.25
+f(1.25) = -1.4 (less than zero)
+L = 1.25
+guess = (L+R) / 2 = (1.25  + 2.5) / 2 = 1.875
+R = 1.875
+guess = (1.25 + 1.875)/2 = 1.5625
+f(guess) < 0
+L = 1.5625, R = 1.875
+
+
+
+
+
+
+algorithm
+guess = (L+R)/2
+do
+        y = f(guess) = 6.25
+        if (y > 0)
+         R = guess
+        else if y < 0
+         L = guess
+        else
+          return guess
+while (R-L > eps);
+
+
+
+NEwton-Raphson
+f(x) = x^2 - 3          f'(x) = 2x
+
+x0 = 4
+xn+1 = xn - f(x)/f'(x) = 4 - 13/8 = 4-1.625 = 2.375
+xn+1 = xn - f(x)/f'(x) = 2.375 - 2.640625/4.75 = 1.819078
+xn+1 = 1.819078 - ????/???? = 1.7341
+
+
+
+f(x) = x^2 - 2          f'(x) = 2x
+x0 = 3
+x1 = 3 - 7/6 = 1 5/6
+x2 = 1.83333333 - f(1.8333333)/f'(1.8333333) = 1.361111111
+x3 = 1.36111111 - f(1.3611111)/f'(1.3611111) = ???
+
+

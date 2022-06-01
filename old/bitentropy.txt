@@ -1,0 +1,68 @@
+3.14159265358979...
+
+The notion that a program can generate data and is therefore the underlying lower bound on complexity is due to Kolmogorov (complexity)
+
+
+/*
+	return fixed number of digits of pi at position k
+*/
+chudenovsky(uint64_t k) {
+
+
+}
+
+
+run-length encoding (RLE)
+
+aaaaaaabbbbbaaaaaaa    a7b5a7
+abc		       a1b1c1
+abcabcabcabc	       {a1b1c1}4  ?? but how to do this
+
+
+
+
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+
+testing testing test testing
+
+t	=0
+te	=1
+es	=2
+st	=3
+ti	=4
+in	=5
+ng	=6
+g 	=7
+tes	=8
+sti	=9
+
+s="i"
+
+output
+testing 13i....
+
+
+tetestesttestitestintesting
+
+this is a test
+this is a test
+this is a test
+
+
+
+
+
+
+

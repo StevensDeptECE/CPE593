@@ -1,0 +1,28 @@
+public class JavaExample {
+	public static void main(String[] args) {
+
+		String s = "";
+		for (int i = 0; i < 1000000; i++)
+			s += i;
+		
+		StringBuilder b = new StringBuilder(5500000);
+		for (int i = 0; i < 1000000; i++)  /
+			b.append(i); // "" + 0 --> "0" + "1" "01"
+
+	}
+
+	String f() {
+		return " ...";
+	}
+
+
+	String g() {
+		return " ...";
+	}
+
+
+	String h() {
+		return f() + g();
+	}
+		
+}

@@ -1,0 +1,19 @@
+public class BadString {
+	public static void main(String[] args) {
+		String s1 = "hello";
+		f(s1);
+		s1 = s1 + "yo"; // "helloyo"
+
+
+		String s  = "";
+		for (int i = 0 ; i < 1000; i++)
+			s = s + i; // "0" + "1"  "01" "012" ... "0....900000" + "900001"
+
+		// 1 + 2 + 3 + ... + N  = o(N^2)  N(N+1)/2
+
+		StringBuilder b = StringBuilder(10000000);
+		for (int i = 0; i < 10000000; i++)
+			b.append(i);
+	}
+
+}

@@ -1,0 +1,75 @@
+(212)555-1212
+212-555-1212
+212.555.1212
+
+class A extends B {
+class ABC extends DEF {
+class ABC {
+public class ABC extends DEF {
+
+
+
+
+
+#
+# This file configures CSP to create a web server that responds to CSP on port 8000
+#
+
+port		8000		# Port range is 0 - (2^16)-1, int will suffice
+protocol	http		# could be enums
+buffer		64k		# type memory
+passwd		fillthisin
+base		c:/bin/csp/data	# this depends on os, base for all directory
+logfile		1.log
+loglevel	WARN		# display anything WARN or above
+language	en		# use ISO codes to switch languages
+vec		1.0 2.0
+xxxxx		abc
+
+
+
+MONSTER = {COMMENT}|{PORT}|{PROTOCOL}|...
+COMMENT		#.*
+PORT		\s*port\s+(\d+)
+PROTOCOL	protocol\s+
+
+
+
+switch (parse(line).getFamily()) {
+case COMMENT: 	  break;
+case PORT:	  port = convertToInt(parse.get(1)); break;
+case PROTOCOL:    protocol = parse.get(1); break;
+
+case VEC:	  x = parse.get(1), y = parse.get(2), z = parse.get(3)
+
+
+IF_STATEMENT	  if[^\{]*{
+if .... {
+
+}
+
+while ... {
+
+}
+
+<html>
+  <head> .. <title></title></head>
+
+  <div>
+    <div>
+    </div>
+    <p class="x">lkasjhfalskj alk</p>
+  </div>
+</html>
+
+
+
+
+ident		  [a-zA-Z_][a-zA-Z_0-9]*
+type		  (((short|long)int)|float|double|char) (abc*)?  ()
+int x;
+int abcd;
+float yyy[];
+char z123;
+
+(char|float|int)\s+({ident})

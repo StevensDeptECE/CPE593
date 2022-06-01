@@ -1,0 +1,61 @@
+public class TrieBits {
+  private int[] trie;
+  public TrieBits() {
+    int size = 400000;
+    trie = new int[size];
+  }
+  void insert(String word) {
+
+  }
+  public void write(String filename) {
+    FileOutputStream fos = ...;
+    nio.Array
+    fos.write();
+    ofstream f("dict.bin", ios::binary);
+    f.write((char*)trie, size);
+  }
+
+class MyHashMap implements Serializable {
+  public void write(String filename);
+  public void read(String filename);
+}
+class Trie3Hash {
+private HashMap<String,Integer> maps[];
+
+public Trie3Hash() {
+  maps = new HashMap<String,Integer>[26*26*26];
+  for (int i = 0; i < 26*26*26; i++)
+    map[i] = new HashMap<String,Integer>[26*26*26];
+}
+public void insert(String word) {
+  if (word.length() < 3) {
+    hashmap[0].put(word, count++);
+    return;
+  }
+  int i = ((word.charAt(0) - 'a') * 26 + (word.charAt(1) - 'a')) * 26 + (word.charAt(2) - 'a');
+  hashmap[i].put(word, count++);
+}
+
+
+
+ObjectOutputStream oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("dict.bin")));
+oos.writeObject(maps);
+oos.close();
+
+
+ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream("dict.bin")));
+maps = (HashMap<String,Integer>[])ois.readObject();
+ois.close();
+
+aaa
+aab
+aac
+...
+aal	-->        hashmap("" --> 1  "ii" --> 2)
+aam	-->	   hashmap("" --> 3)
+aan	-->	   hashmap("i" --> 4)
+aar	--> hashmap("dvark" --> 5, "dwolf" --> 6, "onic"--> 7, "onical"-->8, "onite"
+aaronitic
+aaru
+
+at

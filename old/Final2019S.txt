@@ -1,0 +1,37 @@
+Hashing
+	hash functions
+	linear probing
+	quadratic probing*
+	linear chaining
+	perfect hashing
+
+Matrices
+	representation (rectangular, diagonal, tridiagonal)
+	solving systems (Gauss-Jordan Elimination, partial pivoting)
+	addition
+	multiplication      (nice to know that Strassen O(n^2.807)  Coppersmith Winograd is O(n^2.36)
+	Gram-Schmidt orthogonalization
+
+Strings
+	Boyer-Moore
+	Finite State
+	LCS
+
+	LCS(String a, String b, int i, int j)
+	LCS(char* a, char* b)
+
+Graphs
+	representation: list or matrix
+	DFS
+	BFS
+	IsConnected
+	Bellman-Ford
+	Floyd-Warshall
+	Prim
+	Kruskal
+
+	TSP*
+
+Backtracking
+	basic
+	Heap's
