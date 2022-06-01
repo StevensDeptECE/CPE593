@@ -1,3 +1,0 @@
-Homework for data structures must be in C++ or Java
-
-If in C++, must compile under g++-4.9 or newerp
