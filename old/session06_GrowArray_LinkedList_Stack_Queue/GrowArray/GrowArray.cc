@@ -3,12 +3,12 @@
 
 class GrowArray {
 private:
-	int* data; // int[] data
-	uint_32t len;
+	int*     data; // int[] data
+	uint32_t len;
 	//NOT REQUIRED	uint_32t start;
-	uint_32t capacity;
+	uint32_t capacity;
 	void grow() {
-		capacity = 3*capacity;
+		capacity = 2*capacity;
 	}
 public:
 	void addEnd(); //O()??

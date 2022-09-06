@@ -1,39 +1,56 @@
- 0//quicksort
-/*
-8  7  4  5  6  3  1  2
-pivot = 4
-         i     j
-2                    8
-   1              7
-         3     5
-2  1  4  3  6  5  7  8
-         j   i
+void quicksort(int x[], int L, int R) {
+  if (R <= L)
+    return;
+  int pivot = (x[L] + x[R]) / 2;
+  int i = L, j = R;
 
-        O(n log n)
-*/
-void quicksort(int a[], int L, int R)
-{
-    // termination condition
-    if (L >= R)
-        return;
 
-    int pivot = a[random(L, R)];
-    int i = L, j = R;
-    while (i < j)
-    {
-        while (i < j && a[i] <= pivot)
-            i++;
-        while (i < j && a[j] > pivot)
-            j--;
-        // what is true here?
-        if (i < j)
-        {
-            swap(a[i], a[j]);
-            i++, j--;
-        }
-    }
-    quicksort(a, L, i - 1);
-    quicksort(a, i, R);
+  while (i < j) {
+    while (x[i]< pivot)
+      i++;
+    while(x[j] >= pivot)
+      j--;
+    swap(x[i], x[j]);
+  }
+  // guaranteed i == j
+  quicksort(x, L, i);
+  quicksort(x, i+1, R);
 }
 
-//LOMUTO
+//faster (lower constant)
+void fasterRecursionquicksort(int x[], int L, int R) {
+  int pivot = (x[L] + x[R]) / 2;
+  int i = L, j = R;
+
+
+  while (i < j) {
+    while (x[i]< pivot)
+      i++;
+    while(x[j] >= pivot)
+      j--;
+    swap(x[i], x[j]);
+  }
+  // guarateed i == j
+  if (i - L >= k)
+    quicksort(x, L, i);
+  if (R - (i+1) > k)
+    quicksort(x, i+1, R);
+}
+
+void knuthquicksort(int a[], int n) {
+  fasterquicksort(a, 0, n-1);
+  insertionSort(a);
+}
+
+#if 0
+for (int i = L; i < R; i++) {
+    if (x[i] > pivot) {
+      for (; j > L; j--)
+#endif
+
+
+	
+int main() {
+  int[] a = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+  //  quicksort(a, 0, 9);
+  knuthquicksort(a);

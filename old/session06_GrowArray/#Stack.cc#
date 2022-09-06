@@ -1,0 +1,63 @@
+class Stack {
+private:
+	GrowArray impl;
+public:
+	void push(int v) { //O(1)
+		impl.addEnd(v); //O(1)
+	}
+	int pop() {
+		return impl.removeEnd(); //O(1)
+	}
+
+	bool isEmpty() const {
+		return impl.size() == 0
+	}
+};
+
+class Stack2 {
+private:
+	LinkedList impl; // head, next
+public:
+	void push(int v) {
+		impl.addStart(v); //O(1)
+	}
+	int pop() {
+		return impl.removeStart();//O(1)
+	}
+
+	bool isEmpty() const {
+		return impl.isEmpty();
+	}
+};
+
+
+class Queue {
+private:
+  GrowArray impl;
+public:
+  void enqueue(int v) { //O(n)
+    impl.addStart(v);
+	}
+	int dequeue() { //O(1)
+    return imple.removeStart();
+	}
+	bool isEmpty() const { //O(1)
+		return impl.size() = 0;
+	}
+}
+
+class Queue2 {
+private:
+	LinkedList2 impl; // head,tail  next
+public:
+	void enqueue(int v) {
+
+	}
+	int dequeue() {
+
+	}
+
+	bool isEmpty() const {
+		return impl.isEmpty();
+	}
+};
