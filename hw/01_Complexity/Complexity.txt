@@ -1,0 +1,84 @@
+Identify the worst-case complexity of the following code
+
+1. for (int i = 3; i <= n; i++)
+   {}
+
+2. for (int i = 3; i <= n; i+= 5)
+   {}
+
+3. for (int i = 1; i <= n; i++)
+     for (int j = 1; j <= n; j++)
+     {}
+
+4. for (int i = 1; i <= n; i++)
+     for (int j = 1; j <= i; j++)
+     {}
+
+5. for (int i = 1; i <= n; i++)
+     for (int j = 1; j <= i/2; j++)
+     {}
+
+6. for (int i = 1; i <= n; i++)
+     for (int j = 1; j <= i; j += 2)
+     {}
+
+7. for (int i = 1; i <= n; i *= 2)
+   {}
+
+8. for (int i = 1; i <= n; i *= 2)
+     for (int j = 1; j <= i; j++)
+     {}
+
+9. for (int i = 1; i <= n; i *= 3)
+   {}
+
+10. for (int i = 1; i <= n; i++)
+      for (int j = 1; j <= i; j *= 2)
+      {}
+
+11. for (int i = 1; i <= a; i++)
+      for (int j = 1; j <= b; j++)
+      {}
+
+12. for (int i = 3; i <= a; i += 4)
+      for (int j = 5; j <= b; j *= 2)
+      {}
+
+
+
+Identify the best and worst-case complexity of the following code
+13.
+int f(int a) {
+  for (int i = 3; i <= a; i += 4)
+    if ((i * i + 3 * i + 2) % 2 == 0)
+      return i;
+}
+
+14.
+bool isPrime1(int p) {
+  for (int i = 2; i < p; i++)
+    if (p % i == 0)
+      return false;
+  return true;
+}
+
+15.
+bool isPrime2(int p) {
+  if (p == 2) return true;
+  if (p % 2 == 0) return false;
+  for (int i = 3; i < p; i += 2)
+    if (p % i == 0)
+      return false;
+  return true;
+}
+
+16.
+bool isPrime3(int p) {
+  if (p == 2) return true;
+  if (p % 2 == 0) return false;
+  for (int i = 3; i <= sqrt(p); i += 2)
+    if (p % i == 0)
+      return false;
+  return true;
+}
+
