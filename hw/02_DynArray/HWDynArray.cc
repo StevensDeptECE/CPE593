@@ -4,11 +4,15 @@ private:
 	uint32_t size; // the number of elements used
 	uint32_t capacity; // the amount of memory
 	void checkGrow() {
+	  if (memory does not need to grow)
+	    return;
+	  
 		// if the memory needs to grow, double in size
 		//TODO: YOU IMPLEMENT THIS
 	}
 public:
 	void addEnd(int v) {
+
 		
 	}
 
@@ -42,10 +46,10 @@ int main() {
 	for (int i = 0; i < 9000; i++)
 		a.removeStart();
 
-	// 999 1000 1001 1002 1003 1004 1005 .... .... 1999	
+	// 8499 8500 ...  9499
 
   a.removeEvens();
-	// 999 1001 1003 ... 1999
+	// 8499 8501 8503 ... 9499
   // keep 2 indices (i,j)
 	// first index goes through the array
 	// second advances only when you have one you want
