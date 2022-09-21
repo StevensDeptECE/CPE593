@@ -3,7 +3,8 @@
 1. Create a private repo and share with the TA and me.
     - Create a directory structure
       - src (code goes in this)
-      - doc (your documentation goes in here)
+      - doc (your documentation goes in here, including abstract.pdf)
+      - diagrams (any diagrams that clarify your project)
       - ref (articles you research and download go here)
 1. Select one of the predefined topics, or propose your own. If you wish to pick your own topic, you must write a proposal, less than one page describing what you want to achieve, and show a search showing that you have done the preliminary work to find papers as described below. If you have an idea that has merit, it must be submitted early so I can verify. If you receive approval from me in writing and are assigned the topic, you may proceed.
 1. For your topic, determine a list of keywords and search on google scholar
