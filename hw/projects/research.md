@@ -13,7 +13,7 @@
 1. Store your keywords in a file keywords.txt
 1. Create a file refs.bib where you will store the references you find.
 1. Make an appointment with the librarian
-    - [Courtney or Victoria](https://libanswers.stevens.edu/ask)
+    - [Courtney Walsh or Victoria Orlofsky](https://libanswers.stevens.edu/ask)
     - The librarian will give you better ways to refine your search
     - Look for survey papers on your topic which will tend to be easier to read and good summaries of all the research that's been done
     - Find the most-cited papers in the area
