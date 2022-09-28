@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class HelpMeThisIsSlow2 implements Benchmark {
 	public void doit(int n) {
 		ArrayList<Integer> mylist = new ArrayList<>();

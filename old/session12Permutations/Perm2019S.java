@@ -19,19 +19,20 @@ public class Perm2019S {
 		System.out.println();
 	}
 
-	public void perm(int N) {
-    if (N == 0) {
+	public void perm(int n) {
+    if (n == 0) {
 			print();
 			return;
 		}
-		for (int c = 0; c <= N; c++) {
-			swap(c, N);
-			perm(N-1);
-			swap(c, N);
+		for (int c = 0; c <= n; c++) {
+			swap(c, n);
+			perm(n-1);
+			swap(c, n);
 		}	
 	}
 
 
+	//Heap's
 	public void perm2(int N) {
 		if (N == 0) {
 			print();

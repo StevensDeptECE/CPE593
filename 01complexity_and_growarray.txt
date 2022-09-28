@@ -1,0 +1,66 @@
+Name ____________________
+
+1. What is the complexity of the following code?
+int f(int a, int b) {
+  if (a <= 3)
+    return 19;
+  if (b < 20)
+    return f(a - 1, b - 4);
+  return f(a/2, b - 2)
+}
+
+
+2. What is the complexity of each operation?
+
+all should have choices O(1), O(log n), O(n), O(n log n), O(n^2), O(n^3)
+
+class BadGrowArray {
+private:
+  int* data;
+  int len;
+public:
+  void addEnd(int v);   // O(____)
+  void addStart(int v); // O(____)
+  void removeEnd();     // O(____)
+  void removeStart();   // O(____)
+  void insert(int pos, int v); // O(____)
+  void remove(int pos); // O(____)
+  int size();           // O(____)
+  };
+
+
+class GrowArray {
+private:
+  int* data;
+  int len; // the number used
+  int capacity; // the size of memory
+  void grow(); // double the current memory in size O(____)
+public:
+  void addEnd(int v);   // O(____)
+  void addStart(int v); // O(____)
+  void removeEnd();     // O(____)
+  void removeStart();   // O(____)
+  void insert(int pos, int v); // O(____)
+  void remove(int pos); // O(____)
+  int size();           // O(____)
+}
+
+int main() {
+  BadGrowArray a;
+  for (int i = 0; i < n; i++) // O(____)
+    a.addEnd(i);
+
+  GrowArray b(1000);
+  for (int i = 0; i < n; i++) // O(____)
+    a.addEnd(i);
+
+  for (int i = 0; i < n; i++) // O(____)
+    a.addStart(i);
+
+// what is the complexity to copy a GrowArray?
+  GrowArray c = b; // O(____)
+
+// What is the complexity to count the number of elements in common between two lists that are UNSORTED? // O(_____)
+
+// What is the complexity to count hte number of elements in two SORTED lists O(_____)
+}

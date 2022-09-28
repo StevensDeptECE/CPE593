@@ -4,16 +4,16 @@ using namespace std;
 class HashMapLinearChaining {
 private:
 	uint32_t size;
-	LinkedList<string>* table;
+	vector<LinkedList<string> > table;
 public:
-	HashMapLinearChaining(uint32_t size) {
-		table = new LinkedList<string>[size];
+	HashMapLinearChaining(uint32_t size) : vector(size) {
+		//		table = new LinkedList<string>[size];
 	}
 	~HashMapLinearChaining() {}
 	HashMapLinearChaining(const HashMapLinearChaining& orig) = delete;
 	HashMapLinearChaining& operator =(const HashMapLinearChaining& orig) = delete;q
 	void add(const string& s) {
-		
+
 	}
 	void remove(const string& s) {
 

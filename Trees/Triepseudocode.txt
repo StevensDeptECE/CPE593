@@ -1,0 +1,15 @@
+Trie {
+  add(word) {
+   for (int i = 0; i < length(word); i++)
+     
+
+  }
+
+  isWord(word) {
+
+  }
+
+"cata"
+
+  startsWith(word)
+  }

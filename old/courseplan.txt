@@ -1,0 +1,41 @@
+Analysis of algorithms
+  big-O and Omega
+  loops
+  sequential loops
+  nested loops
+  exercises
+  quiz
+  
+
+  tail recursion
+  recursion
+  exercises
+  quiz
+
+  dynamic programming (memoization)
+  hw
+  quiz
+
+Sorting
+  bubble sort
+  selection sort
+  insertion sort
+  quicksort (C.A.R Hoare), Lomuto variation
+  heapsort
+  Knuth-optimized quicksort
+  mergesort
+
+Searching and Shuffling
+  Unfair shuffle
+  Slow shuffle
+  Fischer-Yates
+
+  entropy: Easier to do than undo
+
+  Linear search
+  Binary search
+  Golden mean search: phi
+  quiz
+  hw
+
+  

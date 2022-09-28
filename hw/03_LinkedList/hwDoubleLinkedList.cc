@@ -12,7 +12,10 @@ private:
 public:
 	DoubleLinkedList() {
 	}
+  // DO NOT FORGET THE DESTRUCTOR!!!
+  ~DoubleLinkedList() {
 
+  }
 	void addStart(int v) {
 
 	}

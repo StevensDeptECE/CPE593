@@ -46,12 +46,12 @@ public:
 			n->c = BLACK;
 		else if (n->parent->c == BLACK)
 			;
-		else {
+		else { // parent is red, we are red
 			Node* p = n->parent;
 			Node* g = p->parent;
 			Node* u = n->uncle();
 			if (g == nullptr)
-				return;
+				return; // TODO: this means we could bail out with parent=R, us=R
 			if (u == nullptr)
 				return;
 			if (u->c == RED) {

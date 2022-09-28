@@ -12,12 +12,12 @@ class DLinkedList {
 	Node* head;
 	Node* tail;
 public:
-	DLinkedList() { //O(1)
+ 	DLinkedList() { //O(1)
 		head = tail = nullptr;
 	}
-	~LinkedList()  { //O(n )
+	~DLinkedList()  { //O(n )
 		Node* temp;
-		for (Node* p = head; p->next != null; p=temp) {
+		for (Node* p = head; p != nullptr; p=temp) {
 			temp = p->next;
       delete p;
 		}

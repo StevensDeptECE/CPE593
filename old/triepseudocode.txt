@@ -1,0 +1,40 @@
+class trie {
+  struct node {
+    node* next[26];
+    bool isword;
+  }
+
+  node root;
+  
+  void insert(word) {
+    p = root
+    for each c in word
+      if p.next[c] == null
+        p.next[c] = new node();
+      p = p.next[c] // p is pointing to next node in trie
+    end
+    p.isword = true
+  }
+  bool contain(word) {
+    p = root
+    for each c in word
+      if p.next[c] == null
+        return false
+      end
+      p = p.next
+    end
+    return p.isword
+  }
+
+  bool containPrefix(word) {
+    p = root
+    for each c in word
+      if p.next[c] == null
+        return false
+      end
+      p = p.next
+    end
+    return true
+  }
+//NOT ON TEST  void remove(word) {}
+}

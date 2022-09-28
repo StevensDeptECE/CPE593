@@ -25,3 +25,4 @@ int main() {
   double x, y;
   double r = 4, theta = pi/2;
   polar2rect(r, theta, x, y); // note: x and y are passed by reference
+}

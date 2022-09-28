@@ -1,0 +1,14 @@
+Assumptions of data structures
+
+1. All operations take unit time
+  x * y is slower than x + y
+  O(1)                 O(1)
+
+2. All memory access is uniform
+  Cache memory just makes memory "faster"
+
+3. add equation for powers of 2
+   fix power of 2 eqn sum = 1 from 1 to inf.
+
+4. fibo complexity 2^n
+
