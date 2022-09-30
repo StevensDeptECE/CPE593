@@ -33,7 +33,7 @@ public class HWDoubleLinkedList {
 	}
 	// implement to print out the list
 	public String toString() {
-	    // StringBuilder!!!
+	    // Don't forget, use StringBuilder!!!
 		return "Implement this!";
 	}
 
