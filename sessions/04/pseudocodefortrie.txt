@@ -1,0 +1,39 @@
+Trie
+
+"dog"
+
+insert(word)
+  Node p = root
+  for each letter c in word
+    if p.next[c] == null
+      p.next[c] = new Node...
+    p = p.next
+  end
+  p.isWord = true
+end
+
+contains(word)
+  Node p = root
+  for each letter c in word
+    if p.next[i] == null
+      return false
+    end
+    p = p.next[i]
+  end
+  return p.isWord
+end
+
+//are there any words in the dictionary starting with "ca"
+// used for DNA: ACGT   ACCCCGTTGTGCAAA
+containsPrefix(prefix)
+  Node p = root
+  for each letter c in word
+    if p.next[i] == null
+      return false
+    end
+    p = p.next[i]
+  end
+  return true
+end
+
+
