@@ -44,7 +44,9 @@ public:
 
 int main() {
 	DoubleLinkedList a;
-	const uint32_t n = 1000000;
+	uint32_t n;
+    cout << "Enter an integer: ";
+    cin >> n;
 	for (int i = 0; i < n; i++)
 		a.addStart(i);
 	for (int i = 0; i < n; i++)
