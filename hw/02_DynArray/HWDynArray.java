@@ -1,4 +1,4 @@
-public class HWGrowArray {
+public class HWDynArray {
 	private int[] p;
 	private int size; // the number of elements used
 	private int capacity; // the amount of memory
@@ -6,7 +6,7 @@ public class HWGrowArray {
 		// if the memory needs to grow, double in size
 		//TODO: YOU IMPLEMENT THIS
 	}
-	public HWGrowArray(int initialCapacity) {
+	public HWDynArray(int initialCapacity) {
 
 	}
 	public void addEnd(int v) {
@@ -27,22 +27,26 @@ public class HWGrowArray {
 
 	public static void main(String[] args) {
     		try {
-    			int n = Integer.parseInt(args[0]);
-			LinkedList a = new LinkedList();
+			HWDynArray a = new HWDynArray(500);   // empty list with 500 elements
+			int n = Integer.parseInt(args[0]);
+			for (int i = 0; i < 500; i++)
+				a.addEnd(i); // really fast!
+		
 			for (int i = 0; i < n; i++)
-				a.addStart(i);
-        
-			for (int i = 0; i < n; i++)
-				a.addEnd(i);
-        
-			for (int i = 0; i < 3*n/2; i++)
-				a.removeStart();
-			for (int i = 0; i < n/2 - 5; i++)
+				a.addEnd(i); // every time you need to grow, double
+		
+			a.addStart(5);
+		
+			for (int i = 0; i < n/2; i++)
 				a.removeEnd();
+		
+			for (int i = 0; i < n/2; i++)
+				a.removeStart();
+		
+		
+			a.removeEvens();
 			System.out.println(a);
-			for (int i = 0; i < 10; i++)
-				a.insert(1, i);
-			System.out.println(a);
+			
     		}
     		catch (NumberFormatException nfe) {
 			System.out.println("Argument must be an integer value");
