@@ -39,24 +39,21 @@ public class HWDoubleLinkedList {
 
 	public static void main(String[] args) {
 		try {
-			HWDoubleLinkedList a = new HWDoubleLinkedList(500); // empty list, with 500 elements
-    		int n = Integer.parseInt(args[0]);
-			for (int i = 0; i < 500; i++)
-				a.addEnd(i); // really fast!
-		
+			HWDoubleLinkedList a = new HWDoubleLinkedList();
+    			int n = Integer.parseInt(args[0]);
 			for (int i = 0; i < n; i++)
-				a.addEnd(i); // every time you need to grow, double
-		
-			a.addStart(5);
-		
-			for (int i = 0; i < n/2; i++)
-				a.removeEnd();
-		
-			for (int i = 0; i < n/2; i++)
+				a.addStart(i);
+        
+			for (int i = 0; i < n; i++)
+				a.addEnd(i);
+        
+			for (int i = 0; i < 3*n/2; i++)
 				a.removeStart();
-		
-		
-			a.removeEvens();
+			for (int i = 0; i < n/2 - 5; i++)
+				a.removeEnd();
+			System.out.println(a);
+			for (int i = 0; i < 10; i++)
+				a.insert(1, i);
 			System.out.println(a);
 		}
     		catch (NumberFormatException nfe) {
