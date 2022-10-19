@@ -15,7 +15,7 @@ The following are projects suitable for the equivalent of the final. Groups of 2
     - With diagrams where appropriate
     - Diagrams are drawn by you in google draw or equivalent tool, stored as .svg or pdf (scalable, not an image so that picture can be blown up)
 - 1% Setup of overleaf including .bib file for bibliography
-- 1% Meeting with librarian and papers put into ref directory of repository
+- 1% Meeting with librarian and papers put into ref directory of repository [See: research guide](research_guide.md)
 - 3% Feedback on other projects
   - Each individual is expected to attend all presentations
   - Write up good questions and comments about each project
