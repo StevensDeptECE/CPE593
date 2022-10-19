@@ -12,7 +12,6 @@ private:
 	}
 public:
 	void addEnd(int v) {
-
 		
 	}
 
@@ -29,44 +28,27 @@ public:
 };
 
 int main() {
-	GrowArray a(500); // empty list, with 500 elements
+	HWDynArray a(500); // empty list, with 500 elements
+    uint32_t n;
+    cout << "Enter an integer: ";
+    cin >> n;
 
 	for (int i = 0; i < 500; i++)
 		a.addEnd(i); // really fast!
 
-	for (int i = 0; i < 100000; i++)
+	for (int i = 0; i < n; i++)
 		a.addEnd(i); // every time you need to grow, double
 
 	a.addStart(5);
-	// 5 0 1 2 3 4 5 6 7 8....   499 0 1 2 3 4 5 6 .... 99999	
-
-	for (int i = 0; i < 90500; i++)
+	
+	for (int i = 0; i < n/2; i++)
 		a.removeEnd();
 
-	for (int i = 0; i < 9000; i++)
+	for (int i = 0; i < n/2; i++)
 		a.removeStart();
 
-	// 8499 8500 ...  9499
-
-  a.removeEvens();
-	// 8499 8501 8503 ... 9499
-  // keep 2 indices (i,j)
-	// first index goes through the array
-	// second advances only when you have one you want
-	/*
-		example
-           j
-     5 4 3 2 1
-     5 3 1 2 1
-             i
-    j = 0
-    for i = 0 to 4
-     if want a[i]
-      a[j++] = a[i]
-     end
-    end
-	 */
-
+	
+    a.removeEvens();
 	
 	cout << a << '\n';
 }

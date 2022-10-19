@@ -1,0 +1,11 @@
+# Multiple Analytical Distribution Filter (MADF)
+
+This is a concept I came up with in 2008 during my thesis. Particle filters use a Monte Carlo approach requiring 100 to 1000 points, and an algorithm that propagates the particles using the physics rules of the system. Effectively the computer is estimating the position and variance by doing a random experiment with simulated robots following the claimed trajectory, with error inserted. Particle filters are simple, but require a lot more work than Kalman filters, and as particles go further out by random chance, eventually they are in such unlikely positions that they must be discarded and new locations must be chosen randomly around the current estimated position. This is both complicated, slow, and potentially biased since if a sensor has an error, you are seeding more particles in the wrong place.
+
+My original article on MADF is attached. It should be somewhat faster than particle filtering because there is no reason to randomly sample, we just scan in a grid pattern estimating the probability of being in each location based on our claimed analytical distribution based on the behavior of the sensors. Note that this still doesn't stop your sensor from just being wrong. A sensor that reports distance to a known location (like GPS) may have a variance of 0.5m and claim that with 95% accuracy, it will be correct, but if there are multipath echoes, or someone jamming it, it can be wildly wrong and the normal variance does not apply.
+
+In this project you would create a simulation of beacons with an error and create a known location, then simulate a robot with sensors reporting with random error and compute the actual error over time. You will have to benchmark the complexity of this method as a function of desired accuracy (analyzing more grid points may be more accurate but will take more time, analogous to having more points in a particle filter). You will also analyze how accuracy may depend on the number of beacons.
+
+It is also critical to evaluate what happens when a beacon goes completely crazy, either reporting erroneous multipaths or someone jamming.
+
+This idea has evidently been published since my thesis under another name: 

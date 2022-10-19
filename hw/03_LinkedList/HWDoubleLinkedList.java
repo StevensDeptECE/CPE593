@@ -38,20 +38,27 @@ public class HWDoubleLinkedList {
 	}
 
 	public static void main(String[] args) {
-		HWDoubleLinkedList a = new HWDoubleLinkedList();
-		final int n = 1000000;
-		for (int i = 0; i < n; i++)
-			a.addStart(i);
-		for (int i = 0; i < n; i++)
-			a.addEnd(i);
-		for (int i = 0; i < 3*n/2; i++)
-			a.removeStart();
-		
-		for (int i = 0; i < n/2 - 5; i++)
-			a.removeEnd();
-		System.out.println(a);
-		for (int i = 0; i < 10; i++)
-			a.insert(1, i);
-		System.out.println(a);
+		try {
+			HWDoubleLinkedList a = new HWDoubleLinkedList();
+    			int n = Integer.parseInt(args[0]);
+			for (int i = 0; i < n; i++)
+				a.addStart(i);
+        
+			for (int i = 0; i < n; i++)
+				a.addEnd(i);
+        
+			for (int i = 0; i < 3*n/2; i++)
+				a.removeStart();
+			for (int i = 0; i < n/2 - 5; i++)
+				a.removeEnd();
+			System.out.println(a);
+			for (int i = 0; i < 10; i++)
+				a.insert(1, i);
+			System.out.println(a);
+		}
+    		catch (NumberFormatException nfe) {
+			System.out.println("Argument must be an integer value");
+		}
+
 	}
 }
