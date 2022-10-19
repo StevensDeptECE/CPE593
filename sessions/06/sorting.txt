@@ -1,0 +1,232 @@
+2  1  4  3  5  6  7  8
+   i
+   temp = 1
+1  2  ... O(1)
+      i
+      O(1)
+      4  3
+         i
+	 temp = a[i]
+1  2  3  4    O(1)
+            5   6   7  8
+
+O(n)
+
+n elements, n/2 out of place by 1 position
+2 1 4 3  6 5  8 7  //O(
+
+n elements, n out of place by 2 positions
+3 2 1  6 5 4   9 8 7 .... n
+2 3 O(1)
+1 2 3 O(2) 1 + 2 = 3 O(1)
+//note to self: FPGA project hardware assisted sorting algorithm
+
+
+================================
+3 Algorithms for choosing the pivot
+1. pivot = (x[left] + x[right]) / 2
+2. pivot = x[random] BEST
+3. pivot = (x[left] + x[(left+right)/2] + x[right])/3
+
+WORST: pivot = x[left]  or pivot= x[right]
+
+1  2   3   4  5   6   7   8  ordered
+
+8 7 6 5 4 3 2 1 (opposite order, same problem!)
+
+
+
+1  3  5    7    8   6     4    2
+
+
+8  5      2         7  3      1       4     6
+
+
+make sure your random number generator is REALLY RANDOM
+    rand()
+
+Read Knuth "Seminumerical Algorithms"
+Random numbers
+
+1 a. You count clicks on a geiger counter for 60 seconds n mod 10 =
+RANDOM, or NOT RANDOM
+
+PSEUDOCODE
+
+InsertionSort
+
+
+Quiksort(a)
+  Quicksort(a, 0, length(a)-1)
+end
+
+8 7 6 5 4 3 2 1
+i             j
+
+// quiksort (Hoare) the partition of a from a[L] to A[R]
+Quiksort(x, L, R)
+  if L >= R
+    return
+  pick = random(0, R-L+1) + L // pick a random number from L to R inclusive
+  pivot = x[pick]
+
+  i = L, j = R
+  while i < j
+    while i < j AND x[i] <= pivot
+      i = i + 1
+    end
+
+    while i < j AND x[j] > pivot
+      j = j - 1
+    end
+    if i < j
+      swap(x[i], x[j])
+    end
+  end
+
+  Quiksort(x, L, i)  // this depends on what you did in the while loops
+  Quiksort(x, i+1, R)
+end
+
+
+Knuth Optimization
+Don't Quicksort until it's sorted
+DO a PARTIAL quicksort
+pick a good k
+
+  if R - L > k
+    return
+
+
+
+
+Lomuto
+pivot = 3
+8   7    6    5    4    3    2     1
+8   7    6    5    4    1    2     3   move pivot to right side
+i
+on left side try to find one bigger than pivot
+3   7    6    5    4    1    2     8
+                             j
+on right side try to find the next one smaller than pivot
+2   7    6    5    4    1    3     8
+    i
+                        j
+    3                        7
+    1                   3
+         3              6
+2   1  |  3 |   5    4    6    7     8
+
+
+
+
+
+Heapsort
+                     1
+		 2      3
+             4    5   6    7
+	   8
+
+1   2   3   4   5   6   7   8
+1   2   3   8   5   6   7   4
+1   2   7   8   5   6   3   4
+1   8   7   2   5   6   3   4
+
+               1
+            8     7
+          2   5     6  3
+        4
+	
+1   8   7   2   5   6   3   4
+
+               8
+            5     7
+          2   1     6  3
+        4
+
+8   5   7   2   1   6   3   4
+Now, we have a heap
+
+swap the biggest with the end
+4   5   7   2   1   6   3     |  8
+
+               4
+            5     7
+          2   1     6  3
+=========================	  
+        8
+
+reform the heap
+               7
+            5      6
+          2   1   4  3
+
+
+heapsort(a)
+  buildheap(a)  O(n/2 log n) = O(n log n)
+  for i = n-1 to 1
+    swap(x[i], x[0])  // place the biggest element at the end
+    makeheap(x, 0, i)
+  end
+end
+
+
+pseudocode for mergesort
+//  3 7            2  9
+//  i              j
+
+
+//  1 2 3 4    9 10 15 30
+
+//given two sorted lists a, b of size n and dest is size 2n
+merge(dest, a, b, n)
+  i = 0
+  j = 0
+  k = 0
+  while i < n and j < n
+    if a[i ] < b[j]
+      dest[k] = a[i]
+      i = i + 1
+    else
+      dest[k] = b[j]
+      j = j + 1
+    end
+    k = k + 1
+  end
+  while i < n
+    dest[k] = a[i]
+    i = i + 1
+    k = k + 1
+  end
+  while j < n
+    dest[k] = b[j]
+    j = j + 1
+    k = k + 1
+  end
+end
+
+
+n=8
+
+8 7    6  5    4  3    2  1
+O(n) storage
+7 8    5  6    3  4    1  2
+                            O(n) storage
+5  6  7  8     1  2   3  4
+
+
+1  2  3  4     5  6   7  8
+
+O(n log n) storage, or can you do better?
+
+O(n)!!! reuse the memory
+
+This is slower (larger constant) than quiksort, but....
+
+
+In order 100 terabytes of data...
+mergesort(a, b, c, d, 2) // read in from drives(a,b) --> (c,d)
+mergesort(c, d, a, b, 4) // read in from drives(c,d) --> (a,b)
+
+insertion sort is best when???? almost sorted, or SMALL (n=100?)
+
