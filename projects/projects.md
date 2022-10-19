@@ -6,17 +6,25 @@ The following are projects suitable for the equivalent of the final. Groups of 2
 
 ## Final Projects Grading and Rubric
 
-- 5% Setup and library research
-  - 1% Repository structure
+- 7% Setup and library research
+  - 3% Repository structure
     - ref directory contains all papers cited and any other supporting materials such as code found
     - Repository setup with specified directories
     - README.md describes project
     - Report is in doc directory
     - Code is clearly written, formatted, and well-commented
+    - No dead files
+    - Project build should be accomplished with standard tools
+      - For Java: maven (mvn), ant or equivalent
+      - For C++: make or cmake
+    - Clear documentation including
+      - Description of all files and what they mean
+      - Resources required to run the project
+      - How to run your code
   - 2% Algorithms and data structures are clearly described
     - With diagrams where appropriate
-    - Diagrams are drawn by you in [TODO: better tool]google draw or equivalent tool, stored as .svg or pdf (scalable, not an image so that picture can be blown up)
-  - 1% Setup of overleaf including .bib file for bibliography
+    - Diagrams are drawn by you in [diagrams.net](https://app.diagrams.net) or equivalent tool, ideally stored as .svg (scalable, not an image so that digrams can be enlarged). Note: plugin available for vscode! draw.io
+  - 1% Setup of overleaf (share with me and TA) including .bib file for bibliography
   - 1% Meeting with librarian and papers put into ref directory of repository [See: research guide](research_guide.md)
 - 30% weekly work, as measured by checkins into your repo
   - Each week, progress must be pushed to the repository.
@@ -32,16 +40,18 @@ The following are projects suitable for the equivalent of the final. Groups of 2
 - 15% Final presentation
   - Clarity. The team clearly explained the project and the algorithms used.
   - Graphics. The slides to present the work are clear and visually appealing
+  - Presentation is polished, you have practiced and know the material
 - 15% Final Paper
   - Paper is in specified format
   - Abstract correctly presents overview of the paper
   - Paper must not mention names of the authors, me, or this course. The paper is about a topic. Any mention of how you feel about the topic, or yourselves is irrelevant. The only place where you may mention names is in acknowledgements, where you may (and should) thank anyone who helped.
 - 3% Feedback on other projects
-  - Each individual is expected to attend all presentations
+  - Each individual is expected to attend (or watch video) of all presentations
   - For each project answer the following 3 questions
     - What did you learn about this topic from the presentation?
     - What did the presentation not cover that you wish it did?
     - In your opinion, how could the presentation have been improved? (Note: this will not be shared with anyone else)
+  - List top 3 projects in your opinion
 
 ## Topics
 
@@ -49,8 +59,10 @@ The following are projects suitable for the equivalent of the final. Groups of 2
 * [Chain](chain/README.md)
 * [Trie/Hash Compressed Dictionary](triehash/README.md)
 * [Hashmap Compressed Dictionary](hashdict/README.md)
+* Tree or Hashmap based dictionary for other languages
 * [Least Squares Fit](leastsquaresfit/README.md)
 * [Dictionary-based Compression](dictionarycompression/README.md)
+* [Punctuation Dictionary](punctuationdictionary/README.md)
 * [Serializable Hashmap Dictionary](serializablehashmap/README.md)
 * [Navigation Simulation](navsim/README.md)
   - Navigation simulation would compare two of three methods of localization for robots
@@ -60,10 +72,10 @@ The following are projects suitable for the equivalent of the final. Groups of 2
       - This was part of my PhD thesis and 
   * Implement an algorithm I did in my thesis and compare to particle filter
 * [Incremental Shortest Path](incrementalshortestpath/README.md)
-* [Winnowing](Winnowing/README.md)
+* [Plagiarism Detection Using Winnowing Algorithm](Winnowing/README.md)
 * [Compression](compression/README.md)
-* [Localization](localization/README.md)
 * [Optimal Packing](optimalpacking/README.md)
+* [Hardware Accelerated Sorting](hardwareacceleratedsorting/README.md)
 * Your project goes here... Suggest one!
 
 
