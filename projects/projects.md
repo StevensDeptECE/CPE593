@@ -6,34 +6,29 @@ The following are projects suitable for the equivalent of the final. Groups of 2
 
 ## Final Projects Grading and Rubric
 
-- 3% Setup and library research
+- 5% Setup and library research
   - 1% Repository structure
     - ref directory contains all papers cited and any other supporting materials such as code found
     - Repository setup with specified directories
     - README.md describes project
     - Report is in doc directory
     - Code is clearly written, formatted, and well-commented
-    - Algorithms and data structures are clearly described
-  - With diagrams where appropriate
-  - Diagrams are drawn by you in google draw or equivalent tool, stored as .svg or pdf (scalable, not an image so that picture can be blown up)
+  - 2% Algorithms and data structures are clearly described
+    - With diagrams where appropriate
+    - Diagrams are drawn by you in [TODO: better tool]google draw or equivalent tool, stored as .svg or pdf (scalable, not an image so that picture can be blown up)
   - 1% Setup of overleaf including .bib file for bibliography
   - 1% Meeting with librarian and papers put into ref directory of repository [See: research guide](research_guide.md)
-
-- 3% Feedback on other projects
-  - Each individual is expected to attend all presentations
-  - Write up good questions and comments about each project
-  - Rate everyone else's project to the best of your ability. This means not giving everyone perfect scores.
-  - You will receive points according to the quality of your feedback.
-  - Note: other teams will not see your feedback and will not know what you have written.
 - 30% weekly work, as measured by checkins into your repo
   - Each week, progress must be pushed to the repository.
   - If you are not able to write code, then diagrams and notes should be pushed up showing your team's progress.
   - Failure to show steady progress results in a zero for that week.
   - No matter how good your project is, doing it all the last minute will earn you a maximum of 70%. Be sure to work steadily all through the semester.
-- 30% Either how well the code works, or if a theory project, the impressiveness of your research.
+- 30% Either how well the code works, or if a theory project, the quality of your research.
   + Code demonstrates working algorithm
   + Code is efficient
   + You have correctly analyzed the complexity of the algorithm as you have implemented it.
+  + Theory shows you have understood existing work and have defined a potentially workable algorithm
+  + It is possible that you prove that your algorithm does not work, and that is an acceptable result. However, you must clearly show why your idea did not work.
 - 15% Final presentation
   - Clarity. The team clearly explained the project and the algorithms used.
   - Graphics. The slides to present the work are clear and visually appealing
@@ -41,7 +36,12 @@ The following are projects suitable for the equivalent of the final. Groups of 2
   - Paper is in specified format
   - Abstract correctly presents overview of the paper
   - Paper must not mention names of the authors, me, or this course. The paper is about a topic. Any mention of how you feel about the topic, or yourselves is irrelevant. The only place where you may mention names is in acknowledgements, where you may (and should) thank anyone who helped.
- 
+- 3% Feedback on other projects
+  - Each individual is expected to attend all presentations
+  - For each project answer the following 3 questions
+    - What did you learn about this topic from the presentation?
+    - What did the presentation not cover that you wish it did?
+    - In your opinion, how could the presentation have been improved? (Note: this will not be shared with anyone else)
 
 ## Topics
 
