@@ -69,13 +69,14 @@ The following are projects suitable for the equivalent of the final. Groups of 2
     - Kalman Filter
     - Particle Filter
     - Multiple Analytical Distribution Filter (MADF).
-      - This was part of my PhD thesis and 
-  * Implement an algorithm I did in my thesis and compare to particle filter
+      - This was part of my PhD thesis
+      - Evidently this idea is called Catagorical Particle Filter. My question is, did I invent it first? My paper was published in 2009 or so.
 * [Incremental Shortest Path](incrementalshortestpath/README.md)
 * [Plagiarism Detection Using Winnowing Algorithm](Winnowing/README.md)
 * [Compression](compression/README.md)
 * [Optimal Packing](optimalpacking/README.md)
 * [Hardware Accelerated Sorting](hardwareacceleratedsorting/README.md)
+* [Simple Parser](simpleparser/README.md)
 * Your project goes here... Suggest one!
 
 
