@@ -1,0 +1,55 @@
+1. C/java identifiers
+abc
+ABC
+a123
+THIS_IS_ALL_CAPS
+thisIsCamelCase
+_this_is_a_bad_idea
+__LINE__
+x_
+a
+_x
+1abc
+
+[A-Za-z_][A-Za-z0-9_]*
+
+1. All words containing vowels (aeiou)
+
+qkly
+back
+quickly
+background
+
+finite state machine
+cccacxccaqat
+
+
+dog|cat
+
+What won't finite state machines do?
+match arbitrary balanced parentheses
+
+ (  (    )    )
+
+{
+
+{    }
+
+}
+
+
+}{  unmatched!
+
+{} {} {}
+
+{ {}{}{} }
+
+{{{ {{{ }}} {} {}{} {{{}}}  }}}
+
+compilers require a GRAMMAR
+
+original unix compiler tools: lex and yacc
+
+modern gnu flex  bison
+
+(x+y) * 2 + (y * z) = 73

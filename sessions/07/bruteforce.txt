@@ -1,0 +1,43 @@
+testing testing 123.
+testo
+    tttttesto
+         ttttttttttt
+
+n=length of search string
+m = length of the target
+O(nm)
+
+abababababababababababababababa
+abababb
+ aabababb
+   aabababb
+
+
+aaaaaaabaaaaaaabaaaaaaabaaaaaaab
+aaaaaaaa
+ aaaaaaaa
+  aaaaaaaa
+   aaaaaaaa
+
+
+we had an adventure. ......................................
+________e
+        ___e        e (beyond end, done!)
+
+avalanche
+O(n/k)
+i love mountain climbing but don't love avalanches.
+        e        e
+	          ____e
+		      ___e         b____e   e   e
+		                        avalanche
+
+
+DNA: group letters to search faster!
+(and by the way, I think each pair is actually determined?
+GTACGATCCCAGC
+
+avalanche
+
+4 9 2 9 0 9 9 1 9 9 9 5 9 3 9 9 9 9 9 9 9 7 9 9 9 9
+a b c d e f g h i j k l m n o p q r s t u v w x y z
