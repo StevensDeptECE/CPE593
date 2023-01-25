@@ -1,0 +1,88 @@
+SHannon: 1960s
+
+100 character sequences of text, removed 1 random letter
+asked humans to determine the missing character
+50% = 1 char = 1 bit
+
+Run-length encoding:
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+<60>a
+
+how to encode 270 a?
+<256>a<14>a
+
+or...
+
+2049 a?
+<252><8><1>a
+
+
+
+aaaaaabbbabab
+
+ababababababababab --> 1a1b1a1b
+
+
+
+etaion
+
+00/  \01 10 11
+e    +
+    / \
+   +
+  / \
+
+eaeeeeaeeeaeeaeaetataeeeaeee
+
+this is a test. this is only a test. if that were true...
+
+
+LZW: Lempel-Ziv-Welch (zip)   7zip (LZMA)   bzip2 (Burrows-Wheeler)
+dictionary
+this is a test. this is a test. thi
+
+this 3 
+
+t: 1
+h: 2
+i: 3
+s: 4
+ : 5
+is: 6
+thi: 124
+
+What about precomputing the dictionary?
+ex: 1M words = 20bits 2.5bytes
+
+this
+
+
+Run-length and LZW are more effective when you can put similar letters together
+
+Burrows-Wheeler (transformation) bzip2 (runlength, lzw, Burrows-Wheeler)
+ 
+lzma x.dat  more compression, faster decompression
+
+bzip x.dat
+
+
+arithmetic encoding:
+64 bit word encode numbers 0..16
+{ 0, 16, 4, 8, 7, 16, 2, 9, ...}
+base = 17
+
+prod = 1;
+for (int i = 0; i < n; i++)
+  prod = prod * base + arr[i]
+
+983
+
+prod = (((prod * base + 0) * base + 16)* base + 4)* base
+
+jpeg2000, webp
+
+
+0 0 0 0 0 0 0 0 0 255 0 0 0 0 0 0 0 0 
+
+Hutter Prize: (code + dictionary + compressed file) / (original file)

@@ -1,0 +1,48 @@
+dfs1(v)
+   visited = new boolean[V] (all false)
+end
+
+dfs_recursive(v, visited)
+  visited[v] = true
+  for i in my adjacencies
+    if NOT visited[i]
+      dfs_recursive(i, visited)
+    end
+  end
+end
+
+dfs_iterative(v)
+  planned = new boolean[V] //O(V)
+  todo = new stack() // O(1)
+  todo.push(v) // O(1)
+  while NOT todo.empty() // O(V)
+    v = todo.pop()
+    print v
+    for each i adjacent to v // O(V)
+      if NOT planned[i]
+        todo.push(i)
+	planned[v] = true
+      end
+    end
+  end
+end
+
+
+bfs_iterative(v) //O(V^2)
+  planned = new boolean[V]
+  todo = new queue()
+  todo.enqueue(v)
+  while NOT todo.isEmpty()
+    v = todo.dequeue()
+    print v
+    for i in adjacent(v)
+      if NOT planned[v]
+        todo.enqueue(i)
+        planned[v] = true
+      end
+    end
+  end
+end
+
+
+

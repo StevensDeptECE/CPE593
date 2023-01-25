@@ -6,7 +6,7 @@ class chain {
 private:
 	struct node {
 		uint8_t type;
-		uint32_t line;
+		uint32_t line_count; // total number of lines in this node and below
 		uint32_t offset[outdegree];
 	};
 	char* text;

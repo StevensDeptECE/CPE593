@@ -86,6 +86,7 @@ The following are small projects suitable for 2-3 people for 2-3 weeks.
 
 * [Expression Tree](expressiontree/expressiontree.md)
 * [Removing Common Headers/Footers from Gutenberg](removingcommon/README.md)
+* Comparison of sorting algorithms (Quicksort, Knuth-Optimized Quicksort)
 
 ## Programming homework proposals
 
