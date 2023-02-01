@@ -2,13 +2,16 @@ public class BadDynamicArray {
   private int[] data;
   public BadDynamicArray() { data = null; }
 
-  public int len() {
+  public int len() { //O(1)
     if (data != null)
       return data.length;
     else
       return 0;
   }
 
+  public int get(int i) { //O(1)
+    return data[i];
+  }
   public void addEnd(int v) {
     int capacity = data != null ? data.length : 0;
     int[] temp = new int[capacity+1]; //O(capacity)
