@@ -29,9 +29,16 @@ Applied Data Structures and algorithms is an intensive introduction to brilliant
 * Identify the theoretical and practical weaknesses in RSA encryption
 * Numerical algorithms: root finding, interpolation, integration
 
-## STUDENT LEARNING OUTCOMES
+## Course Outcomes
 
 After successful completion of this course, students will be able to
+*  Analyze programs and algorithms and determine the complexity of the code
+*  Identify the best possible performance based on limits to algorithmic efficiency * Write, debug, and test data structures
+* Apply the best data structure or algorithm for a particular purpose
+* Recognize and apply common approaches to high-performance such as divide-and-conquer
+* Independently research new algorithms based on knowledge of the fundamentals
+* Gain familiarity with other areas of computer algorithms for future growth and learning
+
   * Analyze code to determine its complexity and determine whether it can be optimized
   * Implement algorithms in C++ or Java
   * Choose from a set of algorithms and select the most appropriate
