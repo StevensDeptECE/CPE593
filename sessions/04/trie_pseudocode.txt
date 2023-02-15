@@ -1,0 +1,38 @@
+class Trie {
+    node root
+    insert(word)
+      p <-- root
+      for c in word
+        if  p.next[c] does not exist
+          p.next[c] = new node
+        end
+        p = p.next[c]
+      end
+      p.is_word = true
+    end
+
+
+    is_word(word)
+      p <-- root
+      for c in word
+        if p.next[c] != null
+          p = p.next[c]
+        else
+          return false;
+      end
+      return p.is_word
+    end
+
+    is_prefix(word)
+      p <-- root
+      for c in word
+        if p.next[c] != null
+          p = p.next[c]
+        else
+          return false;
+      end
+      return true
+    end
+
+
+}
