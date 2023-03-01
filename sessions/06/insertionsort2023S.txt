@@ -1,0 +1,24 @@
+/*insertionsort 2023S
+  1  2  3  5   4  9  8  6   7    -1
+   //O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(2)  + O(n-1)   average n/2 = O(n)
+  1  2  3  4   5  6  8  9
+
+
+
+  n=10^9
+
+  1 2 3 4 5 ....  n-1   -1  with only one value out of order, O(n)
+
+  2 3 4 5 6 7 8 9 10 1
+  2 3 4 5 6 7 8 9 1 10
+  2 3 4 5 6 7 8 1 | 9 10
+*/
+
+void insert(int a[], int n) { // n/2 + n/2-1 + n/2-2 ...  n(n-1)/2/2 = O(n^2)  omega(n)
+
+  for (int i = j - 1; i > 0; i--)  //O(n)
+    if (a[i] > temp) {
+      a[i+1] = a[i];
+    }
+
+}
