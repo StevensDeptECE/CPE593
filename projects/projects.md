@@ -57,7 +57,7 @@ The following are projects suitable for the equivalent of the final. Groups of 2
 
 * [Rope](rope/README.md)
 * [Chain](chain/README.md)
-* [Trie/Hash Compressed Dictionary](triehash/README.md)
+* [Trie/Hash Compressed Dictionary](triehash/CompressedDictionary.md)
 * [Hashmap Compressed Dictionary](hashdict/README.md)
 * Tree or Hashmap based dictionary for other languages
 * [Least Squares Fit](leastsquaresfit/README.md)
