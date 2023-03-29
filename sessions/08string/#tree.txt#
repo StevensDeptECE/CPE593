@@ -1,0 +1,6 @@
+                 merkle-tree
+		 /     \
+		+hash
+               /\
+	         +hash
+		/\

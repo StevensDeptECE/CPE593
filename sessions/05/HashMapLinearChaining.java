@@ -39,7 +39,7 @@ public class HashMapLinearChaining {
     HashMapLinearChaining m = new HashMapLinearChaining(1024);
     for (int i = 0; i < 2000; i++)
       m.add(i, 2*i); // you have to grow!! probably when table is about 75% full
-
+    m.add(0, 93);
     m.remove(5);
 
     for (int i = 1; i < 10; i++) {
