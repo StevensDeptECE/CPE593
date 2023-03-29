@@ -1,0 +1,48 @@
+/*
+  mergesort pseudocode
+
+  1 2    3 4 
+      i  j
+
+
+  1 2
+
+
+*/
+
+merge(a, b, c, n)
+  i = 0
+  j = 0
+
+  while i < n and j < n
+    if a[i] < b[j]
+      c[k] = a[i]
+      i = i + 1
+    else
+      c[k] = b[j]
+      j = j + 1
+    end
+    k = k + 1
+  end
+  while i < n
+    c[k] = a[i]
+    i = i + 1
+    k = k + 1
+  end
+
+  while j < n
+    c[k] = b[j]
+    j = j + 1
+    k = l + 1
+  end
+end
+
+mergesort(a, n)
+  temp = new int[n]
+  i = 2
+  while i < n
+    for j = 0; j < n; j += 2i
+      merge(a[j], a[j+i], temp[j], n)  // merge groups of size i into size 2i
+    end
+    swap(a, temp) 
+  end

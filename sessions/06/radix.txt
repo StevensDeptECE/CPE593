@@ -1,0 +1,36 @@
+10101010101000101010101010101001010101
+
+00000000000000000000001111111111111111
+
+
+n=10^9
+numbers = [a,b]
+20 900 62 42 19 566 200 350 ...
+
+count[10] = {4,0,1,1,0,1,0,0,0,1}
+
+
+
+//   1 2 3 4 5  //O(1) + O(1) + ... + O(n)
+//   4     1
+//   4 1   2
+
+//   1 -1 -1 -1 -1
+
+//out = [3 2 5 4]
+
+
+//Fischer-Yates
+// 1 2 5 4  3
+
+
+/*
+  sorting
+  InsertionSort : data size < 400,   when data is almost sorted
+       1 2 4 3  6 5  ....   n
+  Quicksort: fastest general sort involving swapping, bad if ... pivot is bad (random)
+  Heapsort: fast and deterministic 
+  Mergesort: best when data is HUGE  faster for sequential devices like hard drives, tapes
+  Spreadsort: 30% better than quicksort? more reliable, multiple methods, complicated
+
+*/
